@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Optimal Schedule Widget</string>
+    <string name="time_until_default">30 minutes</string>
+    <string name="location_of_default">Room 1234, Whatever Hall</string>
+</resources>

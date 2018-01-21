@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:padding="@dimen/widget_margin">
+
+    <TextView
+        android:id="@+id/time_until"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/time_until_default"
+        android:textColor="#fff"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/location_of"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_until"
+        android:layout_centerHorizontal="true"
+        android:text="@string/location_of_default"
+        android:textAlignment="center"
+        android:textColor="#fff" />
+</RelativeLayout>
