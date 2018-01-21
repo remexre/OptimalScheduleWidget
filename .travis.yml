@@ -1,5 +1,13 @@
 language: android
 android:
   components:
-    - build-tools-26.0.2
-    - android-26
+  - build-tools-26.0.2
+  - android-26
+script: "./gradlew build"
+deploy:
+  provider: releases
+  api_key:
+    secure: 8McvYtB2SAr5o72t1o9tgNVNIhIaYy/SSLLUibMkxNjTrLhoZYFkQ8ECn0sLYrsY5QizpYWNKInxSih6YJvz0EhA/hsUiuLA61EnmqUITzIUBoACXeG8XXdf+8Ngx178ygGKa4/NYgcxqGL1e+oUpUH/BV2LLIMU+H8Sj+pqeEBcslkCXBHuyzHnfsVjsQk2gD6BhTbx9wdmKySR+oGwkybASLFFzJknhcBCH03UMIVqzbiGZBjhFyGX14Vzv7QOygktsnVPJIj4++GUwrB9z6fi8k+tBiB81ERLfL8CRa/oALwfFKWEWC0YKWWreGzuoU5dALweeuzp9lhdzEddGobb8BKgyWBe7nfe4D2fEk7UPP1MccPJTyQFxo2tjqsSos7x9rOjHztu5jeJBoDbvVv+xWTF30XBthCDEidMxieeaUukRgtEaqbIzN9ZrtqOd0S/Lb8n6LmKiZTvaf0iLoSGLAaoo4EdFYtONM6kNWtiKv6ONdIIwLvLI4lmFXx6TalofbcZr9HjxuCbnQ0ImJ8goISkNYoUX+RmTJ6NEVxtCKbp5QGIz3MhvWvL+RtZm0PTpXRkMj59syrPpCAS45Z1TIa7prqN+lPhccCplU6K0dxRBS9b3bWWbyLB1Ud67er/T1z5hjjI4td1my3GhVUW5CFebjwMx3qrOD9K9hQ=
+  file: app/build/outputs/apk/release/app-release-unsigned.apk
+  on:
+    repo: remexre/OptimalScheduleWidget
